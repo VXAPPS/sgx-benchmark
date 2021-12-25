@@ -1,0 +1,55 @@
+eax: 706a1 ebx: 2400800 ecx: 4ff8ebbf edx: bfebfbff
+stepping 1
+model 10
+family 6
+processor type 0
+extended model 7
+extended family 0
+smx: 0
+
+Extended feature bits (EAX=07H, ECX=0H)
+eax: 0 ebx: 2294e287 ecx: 40400004 edx: ac000400
+sgx available: 1
+sgx launch control: 1
+
+CPUID Leaf 12H, Sub-Leaf 0 of Intel SGX Capabilities (EAX=12H,ECX=0)
+eax: 3 ebx: 1 ecx: 0 edx: 241f
+sgx 1 supported: 1
+sgx 2 supported: 1
+MaxEnclaveSize_Not64: 1f
+MaxEnclaveSize_64: 24
+
+CPUID Leaf 12H, Sub-Leaf 1 of Intel SGX Capabilities (EAX=12H,ECX=1)
+eax: 36 ebx: 0 ecx: 1b edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 2 of Intel SGX Capabilities (EAX=12H,ECX=2)
+eax: 70200001 ebx: 0 ecx: 5e00001 edx: 0
+size of EPC section in Processor Reserved Memory, 94 M
+
+CPUID Leaf 12H, Sub-Leaf 3 of Intel SGX Capabilities (EAX=12H,ECX=3)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 4 of Intel SGX Capabilities (EAX=12H,ECX=4)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 5 of Intel SGX Capabilities (EAX=12H,ECX=5)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 6 of Intel SGX Capabilities (EAX=12H,ECX=6)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 7 of Intel SGX Capabilities (EAX=12H,ECX=7)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 8 of Intel SGX Capabilities (EAX=12H,ECX=8)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
+
+CPUID Leaf 12H, Sub-Leaf 9 of Intel SGX Capabilities (EAX=12H,ECX=9)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+size of EPC section in Processor Reserved Memory, 0 M
