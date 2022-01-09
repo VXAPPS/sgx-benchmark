@@ -2,7 +2,7 @@
 Intel SGX Benchmark.
 
 ## Systems
-Find all detailed information from dmidecode and test-sgx under *system* folder.
+Find all detailed information from [dmidecode](https://www.nongnu.org/dmidecode/) and [test-sgx](https://github.com/ayeks/SGX-hardware) under *system* folder.
 
 ### Nuc NUC7PJYH (SGX1 & SGX2)
 - Pentium Silver J5005 CPU @ 1.50GHz
