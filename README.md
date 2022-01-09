@@ -11,7 +11,7 @@ Find all detailed information from [dmidecode](https://www.nongnu.org/dmidecode/
 
 ### Dell Precision 5750 (SGX1)
 - Xeon W-10885M CPU @ 2.40GHz, 64 GB ECC RAM @ 2667 MHz
-- Ubuntu 20.04, Intel DCAP driver 1.41, PSW 2.15.1
+- Ubuntu 22.04, Kernel 5.13, PSW 2.15.1
 - EPC section in Processor Reserved Memory, 93 M
 
 ### HP (SGX1)
