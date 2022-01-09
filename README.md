@@ -2,65 +2,88 @@
 Intel SGX Benchmark.
 
 ## Systems
-1.
-Intel NUC7PJYH
-Pentium Silver J5005 CPU @ 1.50GHz
-8 GB RAM
-
-Ubuntu 20.04
-Intel DCAP driver
-EPC section in Processor Reserved Memory, 94 M
-
-2.
-Dell Precision 5750
-Xeon W-10885M CPU @ 2.40GHz
-64 GB ECC RAM
-
-Ubuntu 22.04
-Driver from Kernel 5.13
-EPC section in Processor Reserved Memory, 93 M
-
-3.
-HP
-Xeon E5-1234G
-128 MB Enclave Memory
-32 GB RAM
-RHEL8.5
-Intel DCAP driver
-
-4.
-SuperMicro X12SPM
-Xeon Gold 5318Y
-64 GB Enclave Memory
-512 GB ECC RAM
-Ubuntu 22.04
-Driver from Kernel 5.13
-
 Find all detailed information from dmidecode and test-sgx under *system* folder.
 
+### Nuc NUC7PJYH (SGX1 & SGX2)
+- Pentium Silver J5005 CPU @ 1.50GHz
+- 8 GB RAM @ 2400 MHz
+
+- Ubuntu 20.04
+- Intel DCAP driver 1.41
+- PSW 2.15.1
+- EPC section in Processor Reserved Memory, 94 M
+
+### Dell Precision 5750 (SGX1)
+- Xeon W-10885M CPU @ 2.40GHz
+- 64 GB ECC RAM @ 2667 MHz
+
+- Ubuntu 20.04
+- Intel DCAP driver 1.41
+- PSW 2.15.1
+- EPC section in Processor Reserved Memory, 93 M
+
+### HP (SGX1)
+- Xeon E5-1234G @ 111 GHz
+- 32 GB RAM @ 2667 MHz
+
+- RHEL8.5
+- Intel DCAP driver 1.41
+- PSW 2.15.1
+- EPC section in Processor Reserved Memory, 93 M
+
+### SuperMicro X12SPM-TF (SGX1 & SGX2)
+- Xeon Gold 5315Y CPU @ 3.20GHz
+- 512 GB ECC RAM @ 2667 MHz
+
+- Ubuntu 20.04
+- Intel DCAP driver 1.41
+- PSW 2.15.1
+- EPC section in Processor Reserved Memory, 65144 M
+
 ## Benchmarks
-Benchmark are time-based. The tests runs 1.000 times and the mid-time is used for this document. The tests are runned in release-mode with mitigations of CVE-2020-0551 and without.
+Benchmarks are time-based. The tests run 1.000 times, and the average is used for this document. The tests run in release mode without mitigation of CVE-2020-0551.
 
-All systems run with PSW 2.15.1.
-
-Find the complete running data inside *data* folder.
+Find the complete running data inside *data* folder and the code inside *code* folder.
 
 ### Enclave Size
-Run an empty enclave by 1,000 iterations.
+Run different sized enclaves by 1,000 iterations.
 
-Find the code under source/enclave_size.
+##### Overall
 
-#### 1 MB Enclave
-TDB
+##### 1 MB Enclave
+Pentium Silver J5005: 0,03 seconds
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 0,01 seconds
+Less is better.
 
-#### 10 MB Enclave
-TDB
+##### 10 MB Enclave
+Pentium Silver J5005: 0,1 seconds
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 0,03 seconds
+Less is better.
 
-#### 100 MB Enclaves
-TDB
+##### 80 MB Enclave
+Inside SGX1 processor available memory. So this is mostly the last value, which will not swap EPC pages.
 
-#### 1 GB Enclaves
-TDB
+Pentium Silver J5005: 0,65 seconds
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 0,18 seconds
+Less is better.
 
-#### 10 GB Enclaves
-TDB
+##### 100 MB Enclaves
+Pentium Silver J5005: 1,2 seconds
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 0,22 seconds
+Less is better.
+
+##### 1 GB Enclaves
+Pentium Silver J5005: 13,25 seconds
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 1,88 seconds
+Less is better.
+
+##### 10 GB Enclaves
+Pentium Silver J5005: Not enough memory. But will swap to disk and will execute in about 57 minutes.
+Xeon W-10885M:  seconds
+Xeon Gold 5315Y: 18,56 seconds
+Less is better.

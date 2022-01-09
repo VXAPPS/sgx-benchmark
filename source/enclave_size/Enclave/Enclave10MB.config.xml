@@ -1,0 +1,18 @@
+<EnclaveConfiguration>
+  <ProdID>1</ProdID>
+  <ISVSVN>0</ISVSVN>
+<!-- <StackMaxSize>0x40000</StackMaxSize> --> <!-- 256 kb -->
+  <StackMaxSize>0x100000</StackMaxSize> <!-- 1 MB -->
+<!-- <HeapMaxSize>0x100000</HeapMaxSize> --> <!-- 1 MB -->
+  <HeapMaxSize>0xa00000</HeapMaxSize> <!-- 10 MB -->
+<!-- <HeapMaxSize>0x5000000</HeapMaxSize> --> <!-- 80 MB -->
+<!-- <HeapMaxSize>0x6400000</HeapMaxSize> --> <!-- 100 MB -->
+<!-- <HeapMaxSize>0x40000000</HeapMaxSize> --> <!-- 1 GB -->
+<!-- <HeapMaxSize>0x280000000</HeapMaxSize> --> <!-- 10 GB -->
+  <TCSNum>1</TCSNum>
+  <TCSPolicy>1</TCSPolicy>
+  <!-- Recommend changing 'DisableDebug' to 1 to make the enclave undebuggable for enclave release -->
+  <DisableDebug>1</DisableDebug>
+  <MiscSelect>0</MiscSelect>
+  <MiscMask>0xFFFFFFFF</MiscMask>
+</EnclaveConfiguration>
