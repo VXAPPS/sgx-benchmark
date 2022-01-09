@@ -36,14 +36,14 @@ Run different sized enclaves by 1,000 iterations.
 
 ##### 1 MB Enclave
 - Pentium Silver J5005: 0,03 seconds.
-- Xeon W-10885M:  seconds.
+- Xeon W-10885M: 0,04 seconds.
 - Xeon Gold 5315Y: 0,01 seconds.
 
 **Less is better.**
 
 ##### 10 MB Enclave
 - Pentium Silver J5005: 0,1 seconds.
-- Xeon W-10885M:  seconds.
+- Xeon W-10885M: 0,07 seconds.
 - Xeon Gold 5315Y: 0,03 seconds.
 
 **Less is better.**
@@ -52,28 +52,28 @@ Run different sized enclaves by 1,000 iterations.
 Inside SGX1 processor available memory. So this is mostly the last value, which will not swap EPC pages.
 
 - Pentium Silver J5005: 0,65 seconds.
-- Xeon W-10885M:  seconds.
+- Xeon W-10885M: 0,21 seconds.
 - Xeon Gold 5315Y: 0,18 seconds.
 
 **Less is better.**
 
 ##### 100 MB Enclaves
 - Pentium Silver J5005: 1,2 seconds.
-- Xeon W-10885M:  seconds.
+- Xeon W-10885M: 0,46 seconds.
 - Xeon Gold 5315Y: 0,22 seconds.
 
 **Less is better.**
 
 ##### 1 GB Enclaves
 - Pentium Silver J5005: 13,25 seconds.
-- Xeon W-10885M:  seconds.
+- Xeon W-10885M: 5,42 seconds.
 - Xeon Gold 5315Y: 1,88 seconds.
 
 **Less is better.**
 
 ##### 10 GB Enclaves
 - Pentium Silver J5005: Not enough memory. But will swap to disk and will execute in about 57 minutes.
-- Xeon W-10885M:  seconds.
-- Xeon Gold 5315Y: 18,56 seconds.
+- Xeon W-10885M: 54,46 seconds.
+- Xeon Gold 5315Y: 18,60 seconds.
 
 **Less is better.**
