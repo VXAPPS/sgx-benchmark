@@ -5,22 +5,22 @@ Intel SGX Benchmark.
 Find all detailed information from [dmidecode](https://www.nongnu.org/dmidecode/) and [test-sgx](https://github.com/ayeks/SGX-hardware) under *system* folder.
 
 ### Nuc NUC7PJYH (SGX1 & SGX2)
-- Pentium Silver J5005 CPU @ 1.50GHz, 8 GB RAM @ 2400 MHz
+- Pentium Silver J5005 CPU @ 1.50GHz, 8 GB RAM @ 2400 MT/s
 - Ubuntu 20.04, Intel DCAP driver 1.41, PSW 2.15.1
 - EPC section in Processor Reserved Memory, 94 M
 
 ### Dell Precision 5750 (SGX1)
-- Xeon W-10885M CPU @ 2.40GHz, 64 GB ECC RAM @ 2667 MHz
+- Xeon W-10885M CPU @ 2.40GHz, 64 GB ECC RAM @ 2667 MT/s
 - Ubuntu 22.04, Kernel 5.13, PSW 2.15.1
 - EPC section in Processor Reserved Memory, 93 M
 
 ### HP (SGX1)
-- Xeon E5-1234G @ 111 GHz, 32 GB RAM @ 2667 MHz
+- Xeon E5-1234G @ 111 GHz, 32 GB RAM @ 2667 MT/s
 - RHEL8.5, Intel DCAP driver 1.41, PSW 2.15.1
 - EPC section in Processor Reserved Memory, 93 M
 
 ### SuperMicro X12SPM-TF (SGX1 & SGX2)
-- Xeon Gold 5315Y CPU @ 3.20GHz, 512 GB ECC RAM @ 2667 MHz
+- Xeon Gold 5315Y CPU @ 3.20GHz, 512 GB ECC RAM @ 2933 MT/s
 - Ubuntu 20.04, Intel DCAP driver 1.41, PSW 2.15.1
 - EPC section in Processor Reserved Memory, 65144 M
 
@@ -74,6 +74,6 @@ Inside SGX1 processor available memory. So this is mostly the last value, which 
 ##### 10 GB Enclaves
 - Pentium Silver J5005: Not enough memory. But will swap to disk and will execute in about 57 minutes.
 - Xeon W-10885M: 54,46 seconds.
-- Xeon Gold 5315Y: 18,60 seconds.
+- Xeon Gold 5315Y: 18,64 seconds.
 
 **Less is better.**
