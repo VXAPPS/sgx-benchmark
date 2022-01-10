@@ -90,7 +90,7 @@ Inside SGX1 processor available memory. So this is mostly the last value, which 
 ##### 10 GB Enclaves
 - Xeon Gold 5315Y: 18,64 seconds.
 - Xeon E-2276G: 53 seconds.
-- Xeon W-10885M: 54,46 seconds.
+- Xeon W-10885M: 54,67 seconds.
 - Pentium Silver J5005: Not enough memory. But will swap to disk and will execute in about 57 minutes.
 
 <img src="data/10GB.png" alt="Enclave Size 10 GB"/>
