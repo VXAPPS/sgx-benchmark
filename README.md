@@ -2,7 +2,7 @@
 Intel SGX Benchmark.
 
 ## Systems
-Find all detailed information from [dmidecode](https://www.nongnu.org/dmidecode/) and [test-sgx](https://github.com/ayeks/SGX-hardware) under *system* folder.
+Find all detailed information from [dmidecode](https://www.nongnu.org/dmidecode/) and [test-sgx](https://github.com/ayeks/SGX-hardware) under **system** folder.
 
 ### Intel NUC7PJYH (SGX1 & SGX2)
 - Pentium Silver J5005 CPU @ 1.50 GHz, 8 GB RAM @ 2400 MT/s
@@ -34,6 +34,7 @@ Run different sized enclaves by 1,000 iterations.
 
 ##### Overall
 <img src="data/overall.png" alt="Enclave Size Overall"/>
+<img src="data/overall100MB.png" alt="Enclave Size Overall <= 100 MB "/>
 
 ##### 1 MB Enclave
 - Xeon Gold 5315Y: 0,01 seconds.
@@ -89,7 +90,7 @@ Inside SGX1 processor available memory. So this is mostly the last value, which 
 
 ##### 10 GB Enclaves
 - Xeon Gold 5315Y: 18,64 seconds.
-- Xeon E-2276G: 53 seconds.
+- Xeon E-2276G: 53,5 seconds.
 - Xeon W-10885M: 54,67 seconds.
 - Pentium Silver J5005: Not enough memory. But will swap to disk and will execute in about 57 minutes.
 
