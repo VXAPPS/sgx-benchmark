@@ -1,0 +1,47 @@
+eax: 906ea ebx: 100800 ecx: 7ffafbff edx: bfebfbff
+stepping 10
+model 14
+family 6
+processor type 0
+extended model 9
+extended family 0
+smx: 1
+
+Extended feature bits (EAX=07H, ECX=0H)
+eax: 0 ebx: 29c6fbf ecx: 40000000 edx: 9c002e00
+sgx available: 1
+sgx launch control: 1
+
+CPUID Leaf 12H, Sub-Leaf 0 of Intel SGX Capabilities (EAX=12H,ECX=0)
+eax: 1 ebx: 0 ecx: 0 edx: 241f
+sgx 1 supported: 1
+sgx 2 supported: 0
+MaxEnclaveSize_Not64: 1f
+MaxEnclaveSize_64: 24
+
+CPUID Leaf 12H, Sub-Leaf 1 of Intel SGX Capabilities (EAX=12H,ECX=1)
+eax: 36 ebx: 0 ecx: 1f edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 2 of Intel SGX Capabilities (EAX=12H,ECX=2)
+eax: 70200001 ebx: 0 ecx: 5d80001 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 3 of Intel SGX Capabilities (EAX=12H,ECX=3)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 4 of Intel SGX Capabilities (EAX=12H,ECX=4)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 5 of Intel SGX Capabilities (EAX=12H,ECX=5)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 6 of Intel SGX Capabilities (EAX=12H,ECX=6)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 7 of Intel SGX Capabilities (EAX=12H,ECX=7)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 8 of Intel SGX Capabilities (EAX=12H,ECX=8)
+eax: 0 ebx: 0 ecx: 0 edx: 0
+
+CPUID Leaf 12H, Sub-Leaf 9 of Intel SGX Capabilities (EAX=12H,ECX=9)
+eax: 0 ebx: 0 ecx: 0 edx: 0
