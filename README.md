@@ -34,7 +34,7 @@ Run different sized enclaves by 1,000 iterations.
 
 ##### Overall
 <img src="data/overall.png" alt="Enclave Size Overall"/>
-<img src="data/overall100MB.png" alt="Enclave Size Overall <= 100 MB "/>
+<img src="data/overall100MB.png" alt="Enclave Size Overall <= 100 MB"/>
 
 ##### 1 MB Enclave
 - Xeon Gold 5315Y: 0,01 seconds.
